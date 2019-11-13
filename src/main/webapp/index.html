@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flat filters</title>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='style.css' type='text/css' media='all' />
+  </head>
+  <body>
+    <form name="report" action="/report" method="post">
+      <fieldset>
+        <legend>Select flat parameters</legend>
+        <table>
+          <thead>
+            <th class="label"></th>
+            <th></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><label class="personal" for="address">Address</label></td>
+              <td>
+                <select  name="address" id="address">
+                  <option value="Street 1">Street 1</option>
+                  <option value="Street 2">Street 2</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label class="personal" for="rooms">Room count</label></td>
+              <td><input type="text" name="rooms" id="rooms" value="3"></td>
+            </tr>
+            <tr>
+              <td><label class="personal" for="price">Max price</label></td>
+              <td><input type="text" name="price" id="price" value="50000"></td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      <br><input type="submit" class="btn" value="Send">
+    </form>
+  </body>
+</html>
